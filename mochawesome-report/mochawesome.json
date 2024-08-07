@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-08-06T22:23:24.963Z",
+    "end": "2024-08-06T22:23:33.743Z",
+    "duration": 8780,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "714d4250-9dcd-4281-b7f6-b87e7207fbf6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Multicalendar DSO Feature\\Functional_Test_Cases\\Test_case_3.cy.js",
+      "file": "cypress\\e2e\\Multicalendar DSO Feature\\Functional_Test_Cases\\Test_case_3.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8911635c-7619-4b20-821f-8acf2d86059f",
+          "title": "Multicalendar DSO Feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should display data correctly in the Multicalendar",
+              "fullTitle": "Multicalendar DSO Feature should display data correctly in the Multicalendar",
+              "timedOut": null,
+              "duration": 8725,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.multicalendar').find('.calendar-item').should('have.length.greaterThan', 0);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"email\"]`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Multicalendar DSO Feature`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[name=\"email\"]`, but never found it.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Multicalendar DSO Feature`\n    at Context.eval (webpack://hritik_pricelabs_assignment/./cypress/e2e/Multicalendar DSO Feature/Functional_Test_Cases/Test_case_3.cy.js:6:9)",
+                "diff": null
+              },
+              "uuid": "19aa1cf1-ea9e-4e96-9387-172a78f477d5",
+              "parentUUID": "8911635c-7619-4b20-821f-8acf2d86059f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "19aa1cf1-ea9e-4e96-9387-172a78f477d5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8725,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
